@@ -24,6 +24,7 @@ Deploy RBAC as required by [CSI](https://kubernetes-csi.github.io/docs/Example.h
  containers along with Quobyte CSI plugin containers
 
 ```bash
+kubectl create -f deploy/namespace.yaml
 kubectl create -f deploy/attacher-rbac.yaml
 kubectl create -f deploy/nodeplugin-rbac.yaml
 kubectl create -f deploy/provisioner-rbac.yaml
