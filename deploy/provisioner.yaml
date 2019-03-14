@@ -2,6 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: quobyte-csi-provisioner
+  namespace: quobyte
   labels:
     app: quobyte-csi-provisioner
 spec:
@@ -16,6 +17,7 @@ kind: StatefulSet
 apiVersion: apps/v1beta1
 metadata:
   name: quobyte-csi-provisioner
+  namespace: quobyte
 spec:
   serviceName: "quobyte-csi-provisioner"
   replicas: 1

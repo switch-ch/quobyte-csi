@@ -2,6 +2,7 @@ kind: DaemonSet
 apiVersion: apps/v1
 metadata:
   name: quobyte-csi-node-plugin
+  namespace: quobyte
 spec:
   selector:
     matchLabels:

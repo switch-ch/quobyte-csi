@@ -2,6 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: quobyte-csi-attacher
+  namespace: quobyte
   labels:
     app: quobyte-csi-attacher
 spec:
@@ -15,6 +16,7 @@ kind: StatefulSet
 apiVersion: apps/v1beta1
 metadata:
   name: quobyte-csi-attacher
+  namespace: quobyte
 spec:
   serviceName: "quobyte-csi-attacher"
   replicas: 1
